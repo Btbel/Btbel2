@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Контакты — Btbel Auto</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body onload="initPage();">
+
+  <video id="bg-video" autoplay loop muted playsinline>
+    <source src="fonbt.webm" type='video/webm; codecs="vp8, vorbis"'>
+  </video>
+
+  <div id="overlay"></div>
+
+  <div id="ad-modal-bg">
+    <div id="ad-modal">
+      <span id="ad-close" onclick="closeAd()">&times;</span>
+      <div id="ad-badge"></div>
+      <h3 id="ad-title"></h3>
+      <div id="ad-media"></div>
+      <p id="ad-mileage"></p>
+      <div id="ad-price"></div>
+      <a href="contacts.html" class="call-btn">Связаться с менеджером</a>
+    </div>
+  </div>
+
+  <div id="header">
+    <div id="logo"><a href="index.html">BTBEL AUTO</a></div>
+    <div id="menu">
+      <a href="ads.html">Объявления</a>
+      <a href="contacts.html" class="active">Контакты</a>
+      <a href="about.html">О нас</a>
+      <a href="support.html">Поддержка</a>
+      <a href="credit.html">Кредит</a>
+    </div>
+  </div>
+
+  <div class="page-container">
+    <h2 class="page-title">Контакты</h2>
+    <div class="contacts-box">
+      <div class="contacts-info">
+        <h3>Контакты Btbel - auto</h3>
+        <p><strong>Телефон:</strong> +7 (921) 200 04 40</p>
+        <p><strong>Адрес:</strong> Великий Новгород, д.&nbsp;Новая Деревня.</p>
+        <p><strong>Режим работы:</strong> &#128339; 07:00&nbsp;&mdash; 22:00, без выходных</p>
+        <a href="tel:+79212000440" class="call-btn">Позвонить</a>
+      </div>
+      <div class="contacts-map">
+        <img src="screenkart.png" alt="Карта проезда Btbel Auto">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

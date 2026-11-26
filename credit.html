@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Кредит — Btbel Auto</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body onload="initPage();">
+
+  <video id="bg-video" autoplay loop muted playsinline>
+    <source src="fonbt.webm" type='video/webm; codecs="vp8, vorbis"'>
+  </video>
+
+  <div id="overlay"></div>
+
+  <div id="ad-modal-bg">
+    <div id="ad-modal">
+      <span id="ad-close" onclick="closeAd()">&times;</span>
+      <div id="ad-badge"></div>
+      <h3 id="ad-title"></h3>
+      <div id="ad-media"></div>
+      <p id="ad-mileage"></p>
+      <div id="ad-price"></div>
+      <a href="contacts.html" class="call-btn">Связаться с менеджером</a>
+    </div>
+  </div>
+
+  <div id="header">
+    <div id="logo"><a href="index.html">BTBEL AUTO</a></div>
+    <div id="menu">
+      <a href="ads.html">Объявления</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="about.html">О нас</a>
+      <a href="support.html">Поддержка</a>
+      <a href="credit.html" class="active">Кредит</a>
+    </div>
+  </div>
+
+  <div class="page-container">
+    <h2 class="page-title">Автокредит в Btbel Auto</h2>
+    <div class="card-block">
+      <h3>Предварительный расчёт</h3>
+      <p>Укажите стоимость автомобиля, чтобы узнать примерный ежемесячный платёж:</p>
+      <form onsubmit="return calcCredit();" style="margin-top: 15px;">
+        <p>Цена авто (руб.): <input type="number" id="car-price" value="350000" style="padding: 6px; margin-left: 10px;"></p>
+        <p>Срок (мес.): 
+          <select id="months" style="padding: 6px; margin-left: 10px;">
+            <option value="12">12 месяцев</option>
+            <option value="24">24 месяца</option>
+            <option value="36" selected>36 месяцев</option>
+            <option value="60">60 месяцев</option>
+          </select>
+        </p>
+        <input type="submit" value="Рассчитать" class="call-btn" style="border: none; cursor: pointer;">
+      </form>
+      <p id="credit-result" style="margin-top: 15px; color: #FFFFFF;"></p>
+    </div>
+  </div>
+
+</body>
+</html>
